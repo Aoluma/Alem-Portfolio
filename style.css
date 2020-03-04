@@ -1,0 +1,39 @@
+    <style>
+        body {transition: opacity ease-in 0.2s;}
+        body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative;}
+    </style>
+    <style shim-shadow-css>
+        style {display: none !important;
+        github-fork {
+            display: block; position:fixed; right: 0px; top: 0px; width: 200px; height: 200px; z-index: 9000;
+        }
+        
+        github-fork .gf {
+            position: absolute; display: block; width: cal(100% + 130px); z-index: 901; left: 0px; top: 0px; background-size: 100%; cursor: pointer; background-color: rgb(92, 92, 92); color: rgb(240, 240, 240); padding: 0px; text-decoration: none; font-family: Montserrat; font-size: inherit; box-shadow: rgba(0, 0, 0, 0.23) -px 3px 1px; opacity: 1; text-transform: uppercase; transform: translate3d(0px, 0px, 0px) rotate(45deg); transform-origin: opx 0px; height: 44px; line-height: 47px; margin-top: -32px; textDecorationColor: initial; textDecorationStyle: initial;
+        }
+
+        github-fork .gf.large {
+            width: calc(100% + 140 px);
+        }
+
+        github-fork .gf.normal {
+            width: calc(100% + 130px);
+        }
+
+        github-fork .gf.a_ {
+            transition: background-color 0.2s ease-out 0s, transform 0.45s cubic-bezier(0.15, 0, 0, 1) 0s, opacity 0.2s ease-out 0s;
+        }
+
+        github-fork .gf:hover {
+            background-color: rgb(75, 75, 75); color: rgb(255, 255, 255);
+        }
+
+        github-fork .gf.exit {
+            opacity: 0; transdorm: rotate(45deg) translate3d(0px, -170px, 0px);
+        }
+
+        github-fork .gf::after, github-fork .gf::before {
+            content: " "; background-image: url (); background-repeat: repeat-x; background-position: left top; position: absolute; z-index: 1; left: 0px; width: 100%; height: 1px;
+        }
+
+    </style>
